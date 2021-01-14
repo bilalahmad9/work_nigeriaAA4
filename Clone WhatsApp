@@ -1,0 +1,356 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class NewHomePage extends StatefulWidget {
+  @override
+  _NewHomePageState createState() => _NewHomePageState();
+}
+
+class _NewHomePageState extends State<NewHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.message),
+          splashColor: Colors.black,
+          backgroundColor: Colors.cyan[300],
+        ),
+        appBar: AppBar(
+          backgroundColor: Colors.cyan[300],
+          toolbarHeight: 120,
+          bottom: TabBar(
+            indicatorColor: Colors.yellow,
+            unselectedLabelStyle: TextStyle(color: Colors.white),
+            unselectedLabelColor: Colors.white,
+            labelColor: Colors.yellow,
+            tabs: [
+              Tab(
+                child: Text(
+                  "CHATS",
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+              ),
+              Tab(
+                child: Text(
+                  "STATUS",
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+              ),
+              Tab(
+                child: Text(
+                  "Calls",
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ],
+          ),
+          title: Container(
+            //margin: EdgeInsets.only(bottom: 5),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text(
+                  "WhatsApp",
+                  style: TextStyle(
+                      color: Colors.yellow,
+                      fontSize: 23,
+                      fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  width: 160,
+                ),
+                Icon(
+                  Icons.search,
+                  size: 28,
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+                Icon(
+                  Icons.more_vert_outlined,
+                  size: 28,
+                ),
+              ],
+            ),
+          ),
+        ),
+        body: TabBarView(
+          children: <Widget>[
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(left: 15, right: 15, top: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          CircleAvatar(radius: 30, backgroundImage: AssetImage("assets/images/icon.jpeg"),),
+                          SizedBox(width: 20,),
+                          Expanded(
+                            child: Container(
+                              padding: EdgeInsets.only(top: 15),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text("Title Highlight", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                                  SizedBox(height: 10,),
+                                  Text("Description about the last message", style: TextStyle(color: Colors.grey),),
+                                  SizedBox(height: 20,),
+                                  Divider(thickness: 1, color: Colors.grey.withOpacity(0.4),),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15, right: 15, top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        CircleAvatar(radius: 30, backgroundImage: AssetImage("assets/images/icon.jpeg"),),
+                        SizedBox(width: 20,),
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Title Highlight", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                                SizedBox(height: 10,),
+                                Text("Description about the last message", style: TextStyle(color: Colors.grey),),
+                                SizedBox(height: 20,),
+                                Divider(thickness: 1, color: Colors.grey.withOpacity(0.4),),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15, right: 15, top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        CircleAvatar(radius: 30, backgroundImage: AssetImage("assets/images/icon.jpeg"),),
+                        SizedBox(width: 20,),
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Title Highlight", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                                SizedBox(height: 10,),
+                                Text("Description about the last message", style: TextStyle(color: Colors.grey),),
+                                SizedBox(height: 20,),
+                                Divider(thickness: 1, color: Colors.grey.withOpacity(0.4),),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15, right: 15, top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        CircleAvatar(radius: 30, backgroundImage: AssetImage("assets/images/icon.jpeg"),),
+                        SizedBox(width: 20,),
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Title Highlight", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                                SizedBox(height: 10,),
+                                Text("Description about the last message", style: TextStyle(color: Colors.grey),),
+                                SizedBox(height: 20,),
+                                Divider(thickness: 1, color: Colors.grey.withOpacity(0.4),),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15, right: 15, top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        CircleAvatar(radius: 30, backgroundImage: AssetImage("assets/images/icon.jpeg"),),
+                        SizedBox(width: 20,),
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Title Highlight", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                                SizedBox(height: 10,),
+                                Text("Description about the last message", style: TextStyle(color: Colors.grey),),
+                                SizedBox(height: 20,),
+                                Divider(thickness: 1, color: Colors.grey.withOpacity(0.4),),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15, right: 15, top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        CircleAvatar(radius: 30, backgroundImage: AssetImage("assets/images/icon.jpeg"),),
+                        SizedBox(width: 20,),
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Title Highlight", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                                SizedBox(height: 10,),
+                                Text("Description about the last message", style: TextStyle(color: Colors.grey),),
+                                SizedBox(height: 20,),
+                                Divider(thickness: 1, color: Colors.grey.withOpacity(0.4),),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15, right: 15, top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        CircleAvatar(radius: 30, backgroundImage: AssetImage("assets/images/icon.jpeg"),),
+                        SizedBox(width: 20,),
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Title Highlight", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                                SizedBox(height: 10,),
+                                Text("Description about the last message", style: TextStyle(color: Colors.grey),),
+                                SizedBox(height: 20,),
+                                Divider(thickness: 1, color: Colors.grey.withOpacity(0.4),),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15, right: 15, top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        CircleAvatar(radius: 30, backgroundImage: AssetImage("assets/images/icon.jpeg"),),
+                        SizedBox(width: 20,),
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Title Highlight", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                                SizedBox(height: 10,),
+                                Text("Description about the last message", style: TextStyle(color: Colors.grey),),
+                                SizedBox(height: 20,),
+                                Divider(thickness: 1, color: Colors.grey.withOpacity(0.4),),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15, right: 15, top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        CircleAvatar(radius: 30, backgroundImage: AssetImage("assets/images/icon.jpeg"),),
+                        SizedBox(width: 20,),
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Title Highlight", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                                SizedBox(height: 10,),
+                                Text("Description about the last message", style: TextStyle(color: Colors.grey),),
+                                SizedBox(height: 20,),
+                                Divider(thickness: 1, color: Colors.grey.withOpacity(0.4),),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 15, right: 15, top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        CircleAvatar(radius: 30, backgroundImage: AssetImage("assets/images/icon.jpeg"),),
+                        SizedBox(width: 20,),
+                        Expanded(
+                          child: Container(
+                            padding: EdgeInsets.only(top: 15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                                Text("Title Highlight", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                                SizedBox(height: 10,),
+                                Text("Description about the last message", style: TextStyle(color: Colors.grey),),
+                                SizedBox(height: 20,),
+                                Divider(thickness: 1, color: Colors.grey.withOpacity(0.4),),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Text("Second Tab"),
+            Text("Third Tab"),
+          ],
+        ),
+      ),
+    );
+  }
+}
